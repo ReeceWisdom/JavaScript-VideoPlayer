@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--document type = HTML-->
+
+<html lang="en" dir=”LTR”> <!--declares HTML language of website as English & declares text direction as left-to-right-->
+
+<head> <!--container for meta data-->
+	<meta charset="UTF-8"> <!--specifies specifies HTML character set-->
+	<meta name="viewport" content="width=device-width, initial-scale = 1"> <!--page width = screen-width of device & sets initial zoom level of the webpage-->
+	<title>JavaScript</title> <!--title shown in tab-->
+	<script src="JavaScript.js"></script> <!--imports javascript file via its specified location-->
+</head>
+
+<body> <!--defines the content of the HTML document-->
+	<header> <!--container for the header text-->
+		<h1><strong><u>Reece Wisdom --- 17033849 --- 15th Dec. 2017</u></h1> <!--header text displayed in italics & underlined-->
+	</header>
+	
+	<section id="videoContainer">
+		<video poster="poster.jpg">
+			<source src="mmu.mp4" alt="E-Portfolio JavaScript MP4 Video" width="70%">
+			<source src="mmu.webm" alt="E-Portfolio JavaScript WEBM Video" width="70%">
+		</video>
+		
+		<div id="videoControls">
+			<button type="button" id="playPause">Play</button>
+			<button type="button" id="stop">Stop</button>
+			<input type="text" readonly selected value="00:00" id="playbackField" size="4">
+			<input type="range" id="seekBar" min=0 max=100 step=1 value=0>
+			<input type="text" readonly id="durationField" size="4">
+			<button type="button" id="muteUnmute">Mute</button>
+			<input type="range" id="volumeBar" min=0 max=100 step=1 value=100>
+			<select id="playbackSpeedField">
+				<option value="3">3x</option>
+				<option value="2">2x</option>
+				<option value="1.75">1.75x</option>
+				<option value="1.5">1.5x</option>
+				<option value="1.25">1.25x</option>
+				<option selected value="1">1x</option>
+				<option value="0.75">0.75x</option>
+				<option value="0.5">0.5x</option>
+			</select>
+			<button type="button" id="fastForward">></button>
+		</div>	
+	</section>
+</body>
+</html>
